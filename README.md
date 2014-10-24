@@ -12,7 +12,7 @@ the client:
 $ node client.js -c 1
 ```
 
-This means that the client will try to establish only one connection with the
+This will make the client try to establish only one connection with the
 server using socket.io on top of TLS, then wait for a message to be sent by
 the server, and finally close the connection.
 
