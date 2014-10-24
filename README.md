@@ -1,6 +1,7 @@
 In order to reproduce the issue, please run the following:
 
 ```
+$ npm install
 $ node server.js
 ```
 
