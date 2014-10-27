@@ -18,3 +18,9 @@ the server, and finally close the connection.
 
 The issue is that most of the time, the client will be left hanging for a
 while because the connection is not closed properly.
+
+To be able to reproduce the issue easily, instead of re-running the client
+until the connection hangs, you can also invoke it in a loop like following:
+```
+$ for i in `seq 1 30`; do node client.js -c 1; done
+```
